@@ -19,7 +19,32 @@ variable "instance_name" {
   default = "Hybrid Test"
 }
 
-variable "SecGrp_name" {
+variable "secgrp_name" {
   description = "EC2 Secutity Group name"
   default = "Hybrid Test SG"
+}
+
+variable "location_name" {
+  description = "Azure Location"
+  default = "West Europe"
+}
+
+variable "resource_group_name" {
+  description = "Azure Resource Group name"
+  default = "smithaciactsrg"
+}
+
+variable "mysql_server_name" {
+  description = "Azure MySQL Server name"
+  default = "smithaciactsmysql"
+}
+
+variable "mysql_server_login" {
+  description = "Azure MySQL Server Login User"
+  default = "smithaciactsuser"
+}
+
+variable "mysql_server_password" {
+  description = "Azure MySQL Server Password"
+  default = "Verity@123"
 }
