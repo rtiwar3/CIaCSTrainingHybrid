@@ -2,14 +2,10 @@ locals {
   vpc_id              = "vpc-04de07d7d900e861b"
   subnet_id           = "subnet-03f860555a8ea4854"
   keyname             = "CIaCTS_key"
-  #my_access_key       = ""
-  #my_secret_key       = ""
 }
 
 provider "aws" {
   region = var.region
-  #access_key = local.my_access_key
-  #secret_key = local.my_secret_key
 }
 
 resource "aws_security_group" "hybrid-sg" {
