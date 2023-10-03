@@ -20,7 +20,7 @@ resource "azurerm_mysql_server" "hybrid" {
   version    = "5.7"
 
   auto_grow_enabled                 = true
-  backup_retention_days             = 1
+  backup_retention_days             = 7
   geo_redundant_backup_enabled      = true
   infrastructure_encryption_enabled = true
   public_network_access_enabled     = false
