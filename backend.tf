@@ -22,7 +22,7 @@ resource "azurerm_mysql_flexible_server" "hybrid" {
   sku_name   = "B_Standard_B1s"
   version    = "5.7"
 
-  ssl_enforcement_enabled = false
+  require_secure_transport=OFF
 }
 
 resource "azurerm_mysql_flexible_database" "hybrid" {
