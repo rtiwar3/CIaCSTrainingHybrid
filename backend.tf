@@ -16,8 +16,8 @@ resource "azurerm_mysql_flexible_server" "hybrid" {
   location            = azurerm_resource_group.hybrid.location
   resource_group_name = azurerm_resource_group.hybrid.name
 
-  administrator_login          = var.mysql_server_login
-  administrator_login_password = var.mysql_server_password
+  administrator_login    = var.mysql_server_login
+  administrator_password = var.mysql_server_password
 
   sku_name   = "B_Standard_B1s"
   version    = "5.7"
