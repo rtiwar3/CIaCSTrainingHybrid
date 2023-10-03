@@ -34,7 +34,7 @@ resource "azurerm_mysql_database" "hybrid" {
   collation           = "utf8_unicode_ci"
 }
 
-resource "azurerm_mysql_server_rule" "hybrid" {
+resource "azurerm_mysql_firewall_rule" "hybrid" {
   name                = "hybrid"
   resource_group_name = azurerm_resource_group.hybrid.name
   server_name         = azurerm_mysql_server.hybrid.name
