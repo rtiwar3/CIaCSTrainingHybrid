@@ -13,8 +13,8 @@ provider "aws" {
 }
 
 resource "aws_security_group" "hybrid-sg" {
-  name = var."SecGrp_name"
-  description = var."SecGrp_name"
+  name = var.SecGrp_name
+  description = var.SecGrp_name
   vpc_id = local.vpc_id
 
   // To Allow SSH Transport
