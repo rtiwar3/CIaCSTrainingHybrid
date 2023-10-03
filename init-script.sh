@@ -7,6 +7,5 @@ apt-get update
 apt-get install -y apache2
 systemctl enable apache2
 
-git clone https://github.com/SmithaVerity/ABTestingApp.git
-
-mv ABTestingApp/cafe /var/www/html
+git clone -b rds https://github.com/SmithaVerity/IMS.git
+mv IMS /var/www/html
