@@ -19,7 +19,8 @@ resource "azurerm_mysql_server" "hybrid" {
   administrator_login    = var.mysql_server_login
   administrator_login_password = var.mysql_server_password
 
-  sku_name   = "B_Standard_B1s"
+  sku_name   = "B_Gen5_2"
+  storage_mb = 5120
   version    = "5.7"
 
   ssl_enforcement_enabled = false
@@ -33,7 +34,7 @@ resource "azurerm_mysql_database" "hybrid" {
   collation           = "utf8_unicode_ci"
 }
 
-resource "azurerm_mysql_server_firewall_rule" "hybrid" {
+resource "azurerm_mysql_server_rule" "hybrid" {
   name                = "hybrid"
   resource_group_name = azurerm_resource_group.hybrid.name
   server_name         = azurerm_mysql_server.hybrid.name
