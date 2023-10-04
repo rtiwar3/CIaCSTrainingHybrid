@@ -3,7 +3,7 @@
 #  value       = format("https://%s/", azurerm_linux_web_app.webapp.default_hostname)
 #}
 
-output "websiterul" {
+output "websiteURL" {
   value = format("%s%s", aws_instance.hybrid.public_ip, "/IMS")
 }
 
