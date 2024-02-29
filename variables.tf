@@ -6,7 +6,7 @@ variable "region" {
 variable "ami_id" {
   description = "AMI for ubuntu instance"
   type        = string
-  default     = "ami-0f5ee92e2d63afc18"  #Ubuntu AMI for "ap-south-1"
+  default     = "ami-03f4878755434977f"  #Ubuntu AMI for "ap-south-1"
 }
 
 variable "instance_type" {
