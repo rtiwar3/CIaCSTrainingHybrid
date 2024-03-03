@@ -2,6 +2,6 @@
 
 set -e
 
-# git clone -b ciactshybrid https://github.com/SmithaVerity/IMSServerSetup.git
-cd IMSServerSetup/
+git clone https://github.com/SmithaVerity/CIaCSTrainingHybrid.git
+cd CIaCSTrainingHybrid/IMSServerSetup/
 sh deployServer.sh
