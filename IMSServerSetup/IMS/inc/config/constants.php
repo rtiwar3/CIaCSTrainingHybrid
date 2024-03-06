@@ -5,13 +5,13 @@
 	
 	// Database parameters
 	// Data source name
-	define('DSN', 'mysql:host=smithaciactsmysql.mysql.database.azure.com;dbname=shop_inventory');
+	define('DSN', 'mysql:host=rahulciactsmysql.mysql.database.azure.com;dbname=shop_inventory');
 	
 	// Hostname
-	define('DB_HOST', 'smithaciactsmysql.mysql.database.azure.com');
+	define('DB_HOST', 'rahulciactsmysql.mysql.database.azure.com');
 	
 	// DB user
-	define('DB_USER', 'smithaciactsuser');
+	define('DB_USER', 'rahulciactsuser');
 	
 	// DB password
 	define('DB_PASSWORD', 'Verity@123');
